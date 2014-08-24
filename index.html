@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Twik : Twik is an Android application that makes it easier to generate secure and different passwords for each website.">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Twik</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Twik by gustavomondron</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gustavomondron/twik">View on GitHub</a>
-
-          <h1 id="project_title">Twik</h1>
-          <h2 id="project_tagline">Twik is an Android application that makes it easier to generate secure and different passwords for each website.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/gustavomondron/twik/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/gustavomondron/twik/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+        <header>
+          <h1>Twik</h1>
+          <h2>Twik is an Android application that makes it easier to generate secure and different passwords for each website.</h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Twik is an easy to use password generator for Android. Your passwords are always available when you need them, but they are never stored anywhere!</p>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/gustavomondron/twik/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/gustavomondron/twik/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/gustavomondron/twik" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p><strong>Twik</strong> is an easy to use password generator for Android. Your passwords are always available when you need them, but they are never stored anywhere!</p>
 
 <p>Keeping up with todays password requirements isn’t easy. On the one hand, you want to have different, hard-to-guess passwords for each website and service. On the other hand, it’s hard to remember so many passwords! You can rely on a web service to keep all your passwords, and make them readily available from any device. However, this creates a single point of failure: if this password service is compromised, all your passwords would be leaked!</p>
 
-<p>Twik works in a different way. You have to provide a private key that will be stored in the device, and think of a strong master key that will not be stored anywhere. Any time you need to generate a password for a website, you must type your master key. The combination of the master key, the private key, and the website will be used to generate a unique, strong password. Since passwords are generated each time, even if one of them is compromised the rest would be safe. Twik also integrates with any web browser, so that you can generate a password quickly by sharing a website with Twik from the browser.</p>
+<p><strong>Twik</strong> works in a different way. You have to provide a private key that will be stored in the device, and think of a strong master key that will not be stored anywhere. Any time you need to generate a password for a website, you must type your master key. The combination of the master key, the private key, and the website will be used to generate a unique, strong password. Since passwords are generated each time, even if one of them is compromised the rest would be safe. Twik also integrates with any web browser, so that you can generate a password quickly by sharing a website with Twik from the browser.</p>
 
-<p>Twik is compatible with Password Hasher Plus, a Chrome extension by Eric Woodruff that follows the same principles for generating strong passwords. You can use the same private and master keys to generate the same passwords on your desktop browser.</p>
+<p><strong>Twik</strong> is compatible with <strong>Password Hasher Plus</strong>, a Chrome extension by Eric Woodruff that follows the same principles for generating strong passwords. You can use the same private and master keys to generate the same passwords on your desktop browser.</p>
 
-<p>Twik features include:</p>
+<p><strong>Twik</strong> features include:</p>
 
 <ul>
 <li>Several profiles, each with its own private key</li>
@@ -48,19 +48,15 @@
 <li>Share any website from a web browser to generate a password for it</li>
 <li>Customize password generation for each website (password length and characters)</li>
 <li>Automatically copy generated passwords to the clipboard</li>
-</ul><p>Last but not least, Twik is open source (GPLv3). You can have a look at the source code at <a href="https://github.com/gustavomondron/twik">Github</a>.</p>
-      </section>
-    </div>
+</ul><p>Last but not least, <strong>Twik</strong> is open source (GPLv3). You can have a look at the source code at <a href="https://github.com/gustavomondron/twik">Github</a>.</p>
+        </section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Twik maintained by <a href="https://github.com/gustavomondron">gustavomondron</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+        <footer>
+          Twik is maintained by <a href="https://github.com/gustavomondron">gustavomondron</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-              <script type="text/javascript">
+                  <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -71,6 +67,7 @@
             } catch(err) {}
           </script>
 
-
+      </div>
+    </div>
   </body>
 </html>
