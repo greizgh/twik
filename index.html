@@ -3,43 +3,83 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Twik</title>
+    <title>twik</title>
   </head>
 
   <body>
     <div id="container">
       <div class="inner">
         <header>
-            <img alt="Twik" src="images/twik-logo.png" width="140px" height="140px" />
-          <h1>Twik</h1>
-          <h2>Making it easier to generate secure and different passwords for each website.</h2>
+          <img alt="Twik" src="images/twik-logo.png" width="140px" height="140px"/>
+          <h1>twik</h1>
+          <h2>Safe passwords the easy way</h2>
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/gustavomondron/twik/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/gustavomondron/twik/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/gustavomondron/twik" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          <a href="https://github.com/gustavomondron/twik-for-chrome" class="button view-on-github"><span>Twik for Chrome on GitHub</span>
+          <a href="https://github.com/gustavomondron/twik" class="button view-on-github"><span>Twik for Android on GitHub</span></a>
+
+          </a>
         </section>
 
         <hr>
 
         <section id="main_content">
-          <p><strong>Twik</strong> is an easy to use password generator and password manager for Android. Your passwords are always available when you need them, but they are never stored anywhere!</p>
+          <p><strong>Twik</strong> is an open source, easy to use password generator and password manager for your desktop and your Android device. <strong>Your passwords are always available when you need them, but they are never stored anywhere!</strong></p>
 
 <p>Keeping up with todays password requirements isn’t easy. On the one hand, you want to have different, hard-to-guess passwords for each website and service. On the other hand, it’s hard to remember so many passwords! You can rely on a web service to keep all your passwords, and make them readily available from any device. However, this creates a single point of failure: if this password service is compromised, all your passwords would be leaked!</p>
 
-<p><strong>Twik</strong> works in a different way. You have to provide a private key that will be stored in the device, and think of a strong master key that will not be stored anywhere. Any time you need to generate a password for a website, you must type your master key. The combination of the master key, the private key, and the website will be used to generate a unique, strong password. Since passwords are generated each time, even if one of them is compromised the rest would be safe. <strong>Twik</strong> also integrates with any web browser, so that you can generate a password quickly by sharing a website with <strong>Twik</strong> from the browser.</p>
+<h3>How does Twik work?</h3>
 
-<p><strong>Twik</strong> is compatible with <a href="http://passwordhasherplus.com" target="_blank"><strong>Password Hasher Plus</strong></a>, a Chrome extension by Eric Woodruff that follows the same principles for generating strong passwords. You can use the same private and master keys to generate the same passwords on your desktop browser.</p>
+<p><strong>Twik</strong> works in a different way. You have to provide a private key that will be stored in your smartphone or computer, and think of a strong master key that will not be stored anywhere. Any time you need to get the password for a website, you must type your master key. The combination of the master key, the private key, and the website will be used to generate a unique, strong password. Since passwords are generated each time, even if one of them is compromised the rest would be safe.
 
-<p><strong>Twik</strong> features include:</p>
+<div class="centered-image">
+  <img src="images/twik-example.png" alt="How Twik works" width="590" height="264"/>
+</div>
+
+<p>
+<strong>Twik</strong> generates the passwords using a <strong>chyptographic method (HMAC SHA-1)</strong>, which always produces the same password for a particular combination of a website, master key and private key, while being not reversible. This is the reason why you can always get your website passwords without actually storing them.
+</p>
+
+<h3>Twik for Google Chrome</h3>
+
+<p>
+<strong>Twik</strong> extension for Google Chrome allows you to sign up and sign in on your websites using safe passwords in the blink of an eye. <strong>Twik</strong> will detect the password fields on your websites automatically. When you type your master key, <strong>Twik</strong> automatically replaces it with the password for that website in particular before submitting the form.
+</p>
+
+<div class="centered-image">
+  <img src="images/twik-chrome-password_input.png" alt="Twik automatically replaces your master key" width="404" height="264"/>
+</div>
+
+<p>
+Because some websites require different settings, <strong>Twik</strong> also allows you to customize the password settings for each website in particular.
+</p>
+
+<div class="centered-image">
+  <img src="images/twik-chrome-popup.png" alt="Twik automatically replaces your master key" width="600" height="398"/>
+</div>
+
+<strong>Twik for Chrome</strong> features include:
+<ul>
+<li>Several profiles, each with its own private key and settings.
+<li>Customize password generation for each website (password length and characters).
+<li>Automatically replaces your master key with the website password in your websites.
+</ul>
+
+<h3>Twik for Android</h3>
+<strong>Twik for Android</strong> makes it easy to manage your passwords on your smartphone. <strong>Twik</strong> integrates with any web browser, so that you can generate a password quickly by sharing a website with <strong>Twik</strong> from the browser.</p>
+
+<p><strong>Twik for Android</strong> is 100% compatible with the <strong>Twik</strong> for Google Chrome extension. You can use the same private and master keys to generate the same passwords than on your desktop browser.</p>
+
+<p><strong>Twik for Android</strong> features include:</p>
 
 <ul>
 <li>Several profiles, each with its own private key</li>
@@ -48,7 +88,7 @@
 <li>Share any website from a web browser to generate a password for it</li>
 <li>Customize password generation for each website (password length and characters)</li>
 <li>Automatically copy generated passwords to the clipboard</li>
-</ul><p>Last but not least, <strong>Twik</strong> is open source (GPLv3). You can have a look at the source code at <a href="https://github.com/gustavomondron/twik">Github</a>.</p>
+</ul>
 
 <div style="text-align:center;margin-top:50px;margin-bottom:25px">
     <img alt="Tutorial splash screen" src="images/device-2014-08-22-130307.png" width="250" style="margin-right:50px"/>
@@ -59,10 +99,13 @@
     <img alt="Web browser integration" src="images/Screenshot_2014-08-24-20-58-05.png" width="250"/>
 </div>
 
-<div style="text-align:center">
-<a href="https://play.google.com/store/apps/details?id=com.reddyetwo.hashmypass.app" target="_blank">
-    <img alt="Get in on Google Play" src="images/en_generic_rgb_wo_60.png" />
-</a>
+<div style="text-align:center;width:100%">
+  <a href="https://play.google.com/store/apps/details?id=com.reddyetwo.hashmypass.app" target="_blank">
+      <img alt="Get in on Google Play" src="images/en_generic_rgb_wo_60.png" />
+      
+  <a href="https://chrome.google.com/webstore/detail/twik-password-generator/aabbbcmaljeehpfjoepomhbocldfkinc" target="_blank" style="margin-left:50px">
+      <img alt="Get in on Chrome Web Store" src="images/chrome_web_store-badge.png" height="60"/>
+  </a>
 </div>
         </section>
 
